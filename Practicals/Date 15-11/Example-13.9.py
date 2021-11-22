@@ -9,7 +9,7 @@ def main():
 
     counts = 26 * [0]  # create and initialize counts
     for line in infile:
-        # invoke the countLetters fuction to count each letter
+        # invoke the countLetters function to count each letter
         countLetters(line.lower(), counts)
 
     # Display results

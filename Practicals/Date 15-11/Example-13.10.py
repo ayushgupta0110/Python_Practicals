@@ -1,7 +1,7 @@
 def main():
     try:
         number1, number2 = eval(input("Enter two numbers, separated by a comma: "))
-        result = number1/number2
+        result = number1 / number2
         print("Result is ", result)
     except ZeroDivisionError:
         print("Division by Zero!")
