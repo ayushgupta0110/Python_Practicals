@@ -1,5 +1,6 @@
-# 10. Write a function that takes a sentence as input from the user and calculates
-# the frequency of each letter. Use a variable of dictionary type to maintain the count.
+""" 10. Write a function that takes a sentence as input from the user and calculates
+    the frequency of each letter. Use a variable of dictionary type to maintain the count.
+""" 
 
 def main():
     sen = input("Enter a sentence : ")

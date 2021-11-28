@@ -1,5 +1,7 @@
-# Write a function that takes a number (>=1 0) as an input and return the digits of
-# the number as a set
+"""
+4.  Write a function that takes a number (>=1 0) as an input and return the digits of
+    the number as a set
+"""
 
 def returnDigits(n):
     my_list = []
