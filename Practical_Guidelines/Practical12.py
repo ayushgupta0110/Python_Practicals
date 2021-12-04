@@ -26,7 +26,7 @@ def main():
     data = []
     for i in range(n):
         data.append(int(input("Enter the value: ")))
-    # data = [1, 2, 3, 4, 5]
+    # data = [1,1,2,2,2,2,3,4,4,4,5,5,5,5,5,5,5]
     plot_histogram(data)
 
 
