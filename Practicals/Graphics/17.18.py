@@ -18,6 +18,8 @@ def main():
     """
     data = eval(input('Enter data to be plotted as pie chart: '))
     labels = eval(input('Enter the labels: '))
+    # data = [30,40,90,50]
+    # labels = ['Volleyball','Hockey','Cricket','Badminton']
     plotPiechart(data, labels)
 
 if __name__ == '__main__':

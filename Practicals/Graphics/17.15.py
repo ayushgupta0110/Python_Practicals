@@ -21,6 +21,7 @@ def main():
     Return value: None
     """
     data = eval (input('Enter data to be plotted as histogram: '))
+    #data = [1,1,1,2,2,2,2,3,4,4]
     plotHistogram (data)
 
 if __name__ == '__main__':
