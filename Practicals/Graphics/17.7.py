@@ -7,3 +7,6 @@ def main():
 
     plt.plot(x, y,'r*--',markersize=10.5,linewidth=2.2)
     plt.show()
+
+if __name__ == '__main__':
+    main()
