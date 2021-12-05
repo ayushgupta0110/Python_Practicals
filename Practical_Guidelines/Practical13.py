@@ -7,34 +7,44 @@ import matplotlib.pyplot as plt
 import math
 
 def sineCurve():
-    """
-    Objective: To plot sine function
-    Input Parameter: None
-    Return value: None
-    """
-    plt.subplot(2,1,1)
-    degrees = range(0, 360 + 1)
-    sineValues = [math.sin (math.radians (i)) for i in degrees]
-    plt.plot(sineValues)
-    plt.xlabel ('Degree')
-    plt.ylabel('Sine Values')
-    plt.title('Sine Curve')
-    plt.grid()
+    # y = sin(degree)
+    degrees = [x for x in range(0,360+1)]
+    y = [math.sin(math.radians(i)) for i in degrees]
+    plt.subplot(2,2,1)
+    plt.plot(y)
+    plt.xlabel('x')
+    plt.ylabel('sin(x)')
+    plt.title('y = sin(x)')
 
-def cosineCurve ():
-    """
-    Objective: To plot cosine function
-    Input Parameter: None
-    Return Value: None
-    """
-    plt.subplot(2,1,2)
-    degrees = range (0, 360 + 1)
-    cosineValues = [math.cos(math.radians (i)) for i in degrees]
-    plt.plot(cosineValues)
-    plt.xlabel('Degree')
-    plt.ylabel ('Cosine Valves')
-    plt.title('Cosine Curve')
-    plt.grid()
+def cosineCurve():
+    # y = cos(degree)
+    degrees = [x for x in range(0,360+1)]
+    y = [math.cos(math.radians(i)) for i in degrees]
+    plt.subplot(2,2,3)
+    plt.plot(y)
+    plt.xlabel('x')
+    plt.ylabel('cos(x)')
+    plt.title('y = cos(x)')
+
+def polynomialCurve():
+    # y = x**2
+    x = [i for i in range(10+1)]
+    y = [i**2 for i in x]
+    plt.subplot(2,2,2)
+    plt.plot(y)
+    plt.xlabel('x')
+    plt.ylabel('x^2')
+    plt.title('y = x^2')
+
+def exponentialCurve():
+    # y = Exp(x)
+    x = [i for i in range(10+1)]
+    y = [math.exp(i) for i in x]
+    plt.subplot(2,2,4)
+    plt.plot(y)
+    plt.xlabel('x')
+    plt.ylabel('exp(x)')
+    plt.title('y = exp(x)')
 
 def main():
     """
@@ -44,6 +54,8 @@ def main():
     """
     sineCurve()
     cosineCurve()
+    polynomialCurve()
+    exponentialCurve()
     plt.tight_layout()
     plt.show()
 
